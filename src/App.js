@@ -27,8 +27,8 @@ function App() {
       </button>
 
       <Modal open={open} setOpen={setOpen}>
-        <img src="/img/travolta.gif" alt="gif" />
-        <h3>jkjkkknkjn</h3>
+        <img src="./img/travolta.gif" alt="gif" />
+        <h3>Не расстраивай Джона, нажми OK</h3>
         <button>OK</button>
         <button>Cancel</button>
       </Modal>
