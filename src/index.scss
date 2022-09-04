@@ -19,22 +19,23 @@ body {
 }
 
 .open-modal-btn {
-  background: rgb(102, 255, 0);
-  color: #ffffff;
+  width: 200px;
+  background: rgb(245, 245, 245);
+  border: 1px solid #e2e2e2;
+  color: #707070;
   padding: 18px 25px;
   border-radius: 30px;
-  font-weight: 700;
-  border: 0;
+  font-weight: 500;
   outline: none;
   font-size: 22px;
   cursor: pointer;
   line-height: 23px;
-  box-shadow: 0 3px 5px rgba(21, 255, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(197, 197, 197, 0.3);
   transition: all 0.1s ease-in-out;
 
   &:hover {
-    box-shadow: 0 8px 10px rgba(21, 255, 0, 0.4);
-    transform: translateY(-1px);
+    box-shadow: 0 8px 10px rgba(168, 168, 168, 0.4);
+    transform: translateY(-2px);
   }
 
   &:active {
@@ -54,11 +55,10 @@ body {
 }
 
 .modal {
-  padding: 40px;
-  background-color: #fff;
+  // padding: 40px;
   width: 70%;
   width: 500px;
-  height: 550px;
+  height: 500px;
   border-radius: 10px;
   position: absolute;
   left: 50%;
@@ -67,6 +67,14 @@ body {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-in-out;
 
+  .back {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
 
   img {
     border-radius: 10px;
@@ -74,19 +82,22 @@ body {
     height: 100%;
   }
 
+  
+
   svg {
     position: absolute;
     right: 10px;
     top: 10px;
-    height: 24px;
-    width: 24px;
-    opacity: 0.3;
+    height: 30px;
+    width: 30px;
+    opacity: 0.8;
     cursor: pointer;
 
     &:hover {
       opacity: 1;
     }
   }
+
 }
 
 .overlay.animated {
